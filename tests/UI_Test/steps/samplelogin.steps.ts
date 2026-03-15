@@ -4,26 +4,26 @@ import { test } from '../fixture/fixtures';
 
 const { Given, When, Then } = createBdd(test);
 
-Given('I navigate to {string}', async ({ logInPage }, url) => {
-  await logInPage.navigateToURL(url);
+Given('I navigate to {string}', async ({ samplelogInPage }, url) => {
+  await samplelogInPage.navigateToURL(url);
 });
 
-Given('I click on My account', async ({ logInPage }) => {
-  await logInPage.clickMYAccount();
+Given('I click on My account', async ({ samplelogInPage }) => {
+  await samplelogInPage.clickMYAccount();
 });
 
 Given('I enter E-Mail Address {string}',
-  async ({ logInPage }, emailAddress) => {
-    await logInPage.enterEmailAddress(emailAddress);
+  async ({ samplelogInPage }, emailAddress) => {
+    await samplelogInPage.enterEmailAddress(emailAddress);
   }
 );
 
-Given('I enter password {string}', async ({ logInPage }, password) => {
-  await logInPage.enterPassword(password);
+Given('I enter password {string}', async ({ samplelogInPage }, password) => {
+  await samplelogInPage.enterPassword(password);
 });
 
-When('I click on submit button', async ({ logInPage }) => {
-  await logInPage.submitForm();
+When('I click on submit button', async ({ samplelogInPage }) => {
+  await samplelogInPage.submitForm();
 });
 
 Then('I should verify url contains {string}', async ({ page }, looged_URL) => {

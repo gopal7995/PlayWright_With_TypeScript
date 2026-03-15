@@ -3,7 +3,7 @@ import * as Pages from '../page/index';
 import { Page } from '@playwright/test';
 
 type MyFixtures = {
-  logInPage: Pages.LoginPage;
+  samplelogInPage: Pages.SampleLoginPage;
 };
 
 const createTestFunction =
@@ -15,5 +15,5 @@ const createTestFunction =
     use(new PageClass(page));
 
 export const test = base.extend<MyFixtures>({
-  logInPage: createTestFunction(Pages.LoginPage),
+  samplelogInPage: createTestFunction(Pages.SampleLoginPage),
 });
