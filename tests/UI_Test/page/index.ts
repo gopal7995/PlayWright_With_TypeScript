@@ -1,2 +1,2 @@
 export * from './BasePage';
-export * from './loginpage';
+export * from './SampleLoginPage';
